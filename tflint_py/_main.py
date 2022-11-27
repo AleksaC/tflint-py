@@ -25,7 +25,7 @@ def get_dirs(filenames: List[str]) -> Set[str]:
 
 def get_config(dir: str) -> Optional[str]:
     conf_dir = os.path.abspath(dir)
-    while conf_dir != "/":
+    while os.path.dirname(conf_dir) != conf_dir:
         conf_path = os.path.join(conf_dir, ".tflint.hcl")
         if os.path.exists(conf_path):
             return conf_path
