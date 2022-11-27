@@ -1,0 +1,7 @@
+- id: tflint
+  name: tflint
+  description: Run tflint
+  require_serial: true
+  entry: tflint-py
+  language: python
+  types: [terraform]
