@@ -16,8 +16,8 @@ from setuptools import setup
 from setuptools.command.install import install as orig_install
 
 
-TFLINT_VERSION = "0.34.1"
-ARCHIVE_SHA256 = {'linux_arm64': ('tflint_linux_arm64.zip', '37111daa6eb760a2125822e4f21d6825b84767f55c95d3124f2e5b008246ad84'), 'darwin_arm64': ('tflint_darwin_arm64.zip', '37f06c2eb641da2ad1e148b1f9633f35202e321a9b529347b79193d2af6e49c4'), 'linux_amd64': ('tflint_linux_amd64.zip', '5a3d254c5e8222e15afea5da61a7ab66d560c31f302a47cbb90ed69c6dc973ec'), 'windows_amd64': ('tflint_windows_amd64.zip', '6eab6688b9f1b1e0b2b69c9a89b3b82192540c58e8cbfbd66b8ca13519267f8c'), 'darwin_amd64': ('tflint_darwin_amd64.zip', 'd893c35beb7deab32dc6394fde1aa07c7c4b9f591ecb5441939fcc352e1e0f82')}
+TFLINT_VERSION = "0.35.0"
+ARCHIVE_SHA256 = {'darwin_amd64': ('tflint_darwin_amd64.zip', '85dac242bcd20fd6b23a3c272832a7867c5dc7bf8ded316e34da25237bb2c6c2'), 'linux_amd64': ('tflint_linux_amd64.zip', '9969323f8c6fd511bdd9267a34d89c5941eb9a16336fec368381555e9c2f2441'), 'windows_amd64': ('tflint_windows_amd64.zip', 'a272599f24e39f6f66e2d4c41dcf7303154baf7e518fcf1add1236a4f4cf9fea'), 'darwin_arm64': ('tflint_darwin_arm64.zip', 'b72676d8bfacc2b4e096094edad8b94d9d4cf741c8a3511353a8ac3475e1e3cc'), 'linux_arm64': ('tflint_linux_arm64.zip', 'f44d7fd622ac878fad6c023c20a4e5e73fe4ae29e10c78a5d4736b3aefdf3c54')}
 
 
 def get_download_url() -> str:
