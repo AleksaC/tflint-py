@@ -16,8 +16,8 @@ from setuptools import setup
 from setuptools.command.install import install as orig_install
 
 
-TFLINT_VERSION = "0.20.1"
-ARCHIVE_SHA256 = {'windows_amd64': ('tflint_windows_amd64.zip', '8cd7671a6914c711d0007802adc88fe38ec6478483015782c68b9f1ed6822e54'), 'darwin_amd64': ('tflint_darwin_amd64.zip', 'ad9fae8e3cf6f30da4816ab419ddf5f343fb6e7cd8a6b9899097cf17c9106061'), 'linux_amd64': ('tflint_linux_amd64.zip', 'ae3f9199213207e36b3d655957e144d4c1100e9ea854bedffe6426e64b133645')}
+TFLINT_VERSION = "0.20.2"
+ARCHIVE_SHA256 = {'windows_amd64': ('tflint_windows_amd64.zip', '7d73ba1005b39091d1e70d16900c3c15f39cc72a359723fcf885da973ee0d04a'), 'darwin_amd64': ('tflint_darwin_amd64.zip', '96f0b689746603d4acb071610425dc6be26b2e0db65eb4023e4f8475fe79775c'), 'linux_amd64': ('tflint_linux_amd64.zip', '9d0c2a6da320e55018c1ae3df9d5f4e4fe0f34274a609b29f306f407db9e6a2e')}
 
 
 def get_download_url() -> str:
