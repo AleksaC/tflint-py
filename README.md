@@ -16,7 +16,7 @@ This package was built to make it more convenient to run tflint as a pre-commit
 hook, so it hasn't been published to PyPI. However you can install it using git:
 
 ```shell script
-pip install git+https://github.com/AleksaC/tflint-py.git@v0.41.0
+pip install git+https://github.com/AleksaC/tflint-py.git@v0.42.0
 ```
 
 ### pre-commit hook
@@ -26,7 +26,7 @@ To use the pre-commit hook include the following config in your `.pre-commit-con
 ```yaml
 repos:
   - repo: https://github.com/AleksaC/tflint-py
-    rev: v0.41.0
+    rev: v0.42.0
     hooks:
       - id: tflint
 ```
