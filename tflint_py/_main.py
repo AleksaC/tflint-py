@@ -3,7 +3,6 @@ from __future__ import annotations
 import argparse
 import os
 import subprocess
-import sys
 
 from typing import List
 from typing import Optional
@@ -39,7 +38,7 @@ def run_tflint_command(
     if options is not None:
         command.extend(options)
     if dir is not None:
-        command.append(dir)
+        command.extend(["--chdir", dir])
 
     res = subprocess.run(command, **kwargs)
 
