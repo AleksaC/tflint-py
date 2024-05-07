@@ -77,7 +77,7 @@ def extract(url: str, data: bytes) -> bytes:
 def save_executable(data: bytes, base_dir: str):
     exe = "tflint" if platform.system() != "Windows" else "tflint.exe"
     output_path = os.path.join(base_dir, exe)
-    os.makedirs(base_dir)
+    os.makedirs(base_dir, exist_ok=True)
 
     with open(output_path, "wb") as fp:
         fp.write(data)
